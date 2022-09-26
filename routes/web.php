@@ -30,3 +30,14 @@ Route::get('/auth/facebook/callback', function () {
  
     dd($user);
 });
+
+
+Route::get('auth/google' , function(){
+    return Socialite::driver('google')->redirect();
+});
+
+Route::get('/auth/google/callback', function () {
+    $user = Socialite::driver('google')->user();
+ 
+    dd($user);
+});
