@@ -40,7 +40,7 @@ return [
     'google' => [
         'client_id' => '574489480900-mpq8ma429lf2l97mej11lhpa4fd89auf.apps.googleusercontent.com',
         'client_secret' => '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',
-        'redirect' => '/auth/facebook/callback',
+        'redirect' => '/auth/google/callback',
     ],
 
 ];
